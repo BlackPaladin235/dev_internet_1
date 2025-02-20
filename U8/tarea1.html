@@ -1,0 +1,13 @@
+const persona = {
+    nombre: "Juan Pérez",
+    edad: 30,
+    correo: "juan.perez@example.com"
+};
+
+// Mostrar el objeto en la consola
+console.log(persona);
+
+// Mostrar el objeto en el navegador
+const mostrarPersona = document.createElement("pre");
+mostrarPersona.textContent = JSON.stringify(persona, null, 2);
+document.body.appendChild(mostrarPersona);

@@ -1,0 +1,13 @@
+const mascota = {
+    nombre: "Firulais",
+    edad: 5,
+    tipo: "Perro"
+};
+
+// Mostrar el objeto en la consola
+console.log(mascota);
+
+// Mostrar el objeto en el navegador
+const mostrarMascota = document.createElement("pre");
+mostrarMascota.textContent = JSON.stringify(mascota, null, 2);
+document.body.appendChild(mostrarMascota);

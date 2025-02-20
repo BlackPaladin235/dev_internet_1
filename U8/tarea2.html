@@ -1,0 +1,18 @@
+const persona = {
+    nombre: "Juan",
+    apellidoPaterno: "Pérez",
+    apellidoMaterno: "Gómez",
+    edad: 30,
+    correo: "juan.perez@example.com"
+};
+
+// Crear la cadena con el nombre completo
+const nombreCompleto = `${persona.nombre} ${persona.apellidoPaterno} ${persona.apellidoMaterno}`;
+
+// Mostrar el nombre completo en la consola
+console.log(nombreCompleto);
+
+// Mostrar el nombre completo en el navegador
+const mostrarNombre = document.createElement("p");
+mostrarNombre.textContent = nombreCompleto;
+document.body.appendChild(mostrarNombre);

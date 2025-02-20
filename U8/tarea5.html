@@ -1,0 +1,13 @@
+const libro = {
+    titulo: "Cien años de soledad",
+    autor: "Gabriel García Márquez",
+    fechaPublicacion: "1967"
+};
+
+// Mostrar el objeto en la consola
+console.log(libro);
+
+// Mostrar el objeto en el navegador
+const mostrarLibro = document.createElement("pre");
+mostrarLibro.textContent = JSON.stringify(libro, null, 2);
+document.body.appendChild(mostrarLibro);
